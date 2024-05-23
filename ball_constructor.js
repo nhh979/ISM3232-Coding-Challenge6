@@ -18,8 +18,20 @@ class Ball {
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI*2, false);
         ctx.fill()
     }
+
+    // Create a method to update the ball's positions
+    update (width, height) {
+        // This method takes two arguments: canvan's width and canvas's height
+        if (this.x <= 0 || this.x > width){
+            this.dx *= -1
+        }
+        if (this.y <= 0 || this.y > height){
+            this.dy *= -1
+        }
+        // Update the x, y coordinates
+        this.x += this.dx;
+        this.y += this.dy;
+    }
 }
-
-
 
 
