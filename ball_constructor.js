@@ -51,7 +51,7 @@ function canvasBoundary (){
     ctx.strokeRect(0, 0, width, height)
 }
 // Create the ball object
-let ball = new Ball(20, 30, 20, 3, 2, 'pink')        
+let ball = new Ball(200, 160, 20, 2, 2, 'red')        
 
 // Implement animation
 setInterval(() => {
@@ -61,6 +61,4 @@ setInterval(() => {
     ball.update(width, height);         // Update the positions
 }, 
 10)    // Update the canvas every 10ms
-
-
 
