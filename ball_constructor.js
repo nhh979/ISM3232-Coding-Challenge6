@@ -1,3 +1,5 @@
+// Hoang Nguyen
+// U12840485
 
 // Create Ball class
 class Ball {
